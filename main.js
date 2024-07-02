@@ -13,6 +13,7 @@ if (window.Worker) {
     myWorker.onerror = function(e) {
         console.error('Error en el worker:', e);
     };
+    myWorker.terminate()
 } else {
     console.log('Tu navegador no soporta Web Workers.');
 }
